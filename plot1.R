@@ -18,7 +18,10 @@ hpcsub <- hpc[hpc$DateAsDate == as.Date("2007-02-01") | hpc$DateAsDate == as.Dat
 png(file="plot1.png",width=480,height=480)
 
 # Generate histogram
-hist(as.numeric(hpcsub$Global_active_power),col="red",
-     xlab="Global Active Power (kilowatts)",main="Global Active Power")
+hist(as.numeric(hpcsub$Global_active_power),
+     col="red", 
+     xlab="Global Active Power (kilowatts)",
+     bg = "transparent",
+     main="Global Active Power")
 
 dev.off()
