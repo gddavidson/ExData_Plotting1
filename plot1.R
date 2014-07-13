@@ -15,7 +15,7 @@ hpc$DateTime <- strptime(paste(hpc$Date,hpc$Time),format="%d/%m/%Y %H:%M:%S")
 hpcsub <- hpc[hpc$DateAsDate == as.Date("2007-02-01") | hpc$DateAsDate == as.Date("2007-02-02"),]
 
 # Select png device for plot output
-png(file="ExData_Plotting1/plot1.png",width=480,height=480)
+png(file="ExData_Plotting1/plot1.png",width=480,height=480,bg = "transparent")
 
 # Generate histogram
 hist(as.numeric(hpcsub$Global_active_power),

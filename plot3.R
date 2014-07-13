@@ -17,7 +17,7 @@ hpcsub <- hpc[hpc$DateAsDate == as.Date("2007-02-01") | hpc$DateAsDate == as.Dat
 # Select png device for plot output
 png(file="ExData_Plotting1/plot3.png",width=480,height=480,bg = "transparent")
 
-# Generate histogram
+# Generate line plot
 with(hpcsub, {
      plot(DateTime,Sub_metering_1,
           xlab="",
